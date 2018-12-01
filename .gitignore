@@ -87,3 +87,20 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+# PyCharm
+.idea/
+
+# vim
+.*.swp
+
+# data files
+*.zip
+*.tar
+*.tar.*
+*.tgz
+*.xml
+
+# sbwce
+corpora/
+TODO
