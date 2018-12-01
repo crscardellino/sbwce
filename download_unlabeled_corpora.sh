@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-cd ../resources/
 cat unlabeled_corpora.tsv | while read resource
 do
     dirname=$(echo -n $resource | awk '{ print $1 }')
