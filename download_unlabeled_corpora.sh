@@ -11,6 +11,7 @@ do
     if [[ $link =~ .*\.xml\.bz2$ ]]
     then
         wget -O $dirname.xml.bz2 $link
+        bunzip2 $dirname.xml.bz2
     elif [[ $link =~ \.*\.tar\.gz$ ]]
     then
         wget -O $dirname.tar.gz $link
