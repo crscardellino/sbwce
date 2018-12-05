@@ -1,0 +1,6 @@
+ipython
+ipdb
+gensim
+requests
+spacy
+tqdm
