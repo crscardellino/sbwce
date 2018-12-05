@@ -10,16 +10,10 @@ do
     cd corpora/$dirname
     if [[ $link =~ .*\.xml\.bz2$ ]]
     then
-        wget -O $dirname.xml.bz2 $link
+        curl -L -o $dirname.xml.bz2 $link
         bunzip2 $dirname.xml.bz2
-    elif [[ $link =~ \.*\.tar\.gz$ ]]
-    then
-        wget -O $dirname.tar.gz $link
-        tar xvf $dirname.tar.gz
-        find . -type f -name "*xml.gz" -exec gunzip {} \+
-        find . -type f -name "*html.gz" -exec gunzip {} \+  # for PHP
     else
-        wget -O $dirname.txt.gz $link
+        curl -L -o $dirname.txt.gz $link
         gunzip $dirname.txt.gz
     fi
     cd ../..
