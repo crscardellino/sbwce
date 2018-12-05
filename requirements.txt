@@ -1,6 +1,7 @@
 ipython
 ipdb
 gensim
+lxml
 requests
 spacy
 tqdm
