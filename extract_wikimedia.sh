@@ -10,7 +10,7 @@ do
     >&2 echo "Extracting $file"
     python /tmp/wikiextractor.py -o - \
         --list --filter_disambig_pages \
-        ./corpora/$file/$file.xml 2> ./logs/$file.log | sed 's/^-\s*//' > ./corpora/$file/$file.txt
+        ./corpora/$file/$file.xml 2> ./logs/$file.log | sed 's/^-\s*//' | grep -v "^<[/]*doc" > ./corpora/$file/$file.txt
 done
 
 >&2 echo "All files extracted"
