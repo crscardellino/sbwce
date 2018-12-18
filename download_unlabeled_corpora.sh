@@ -6,8 +6,7 @@ do
     link=$(echo -n $resource | awk '{ print $3 }')
 
     >&2 echo "Fetching $link"
-    mkdir -p corpora/$dirname
-    cd corpora/$dirname
+    cd corpora/
     if [[ $link =~ .*\.xml\.bz2$ ]]
     then
         curl -L -o $dirname.xml.bz2 $link
@@ -16,7 +15,7 @@ do
         curl -L -o $dirname.txt.gz $link
         gunzip $dirname.txt.gz
     fi
-    cd ../..
+    cd ../
 done
 
 >&2 echo "All links fetched"

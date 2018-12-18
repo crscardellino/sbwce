@@ -103,5 +103,5 @@ ENV/
 
 # sbwce
 corpora/
-TODO
+parsed_corpora/
 logs/
