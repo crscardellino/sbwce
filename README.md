@@ -82,7 +82,7 @@ libraries.
 
 #### FastText
 
-- [CBOW Model](https://cs.famaf.unc.edu.ar/~ccardellino/SBWCE/SBW-vectors-300-min5-skipgram-cbow.model.tar.bz2)
+- [CBOW Model](https://cs.famaf.unc.edu.ar/~ccardellino/SBWCE/SBW-vectors-300-min5-cbow-fasttext.model.tar.bz2)
 - [Skipgram Model](https://cs.famaf.unc.edu.ar/~ccardellino/SBWCE/SBW-vectors-300-min5-skipgram-fasttext.model.tar.bz2)
 
 
