@@ -89,7 +89,7 @@ libraries.
 Corpora
 -------
 
-Most of the data comes from two soruces:
+Most of the data comes from two sources:
 
 - [The Open Parallel Corpus Project (OPUS)](http://opus.nlpl.eu/): This is a
   resource built for the purpose of machine translation tasks.
